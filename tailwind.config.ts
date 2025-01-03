@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
   content: [
@@ -18,6 +19,10 @@ export default {
       screens: {
         xs: "375px",
         xl: "1200px",
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+        calistoga: ["var(--font-calistoga)", ...defaultTheme.fontFamily.serif],
       },
     },
   },
