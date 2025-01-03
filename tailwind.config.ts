@@ -7,7 +7,19 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        md: "2rem",
+      },
+    },
+    extend: {
+      screens: {
+        xs: "375px",
+        xl: "1200px",
+      },
+    },
   },
   plugins: [],
 } satisfies Config;
