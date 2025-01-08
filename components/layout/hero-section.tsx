@@ -9,7 +9,10 @@ import { buttonVariants } from "../ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-x-clip py-32 md:py-48 xl:py-60">
+    <section
+      id="hero"
+      className="relative flex min-h-svh flex-col items-center justify-center overflow-x-clip"
+    >
       <div className="absolute inset-0 -z-40 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black,transparent)]">
         {/* Grain */}
         <div className="absolute inset-0 -z-30 bg-[url('/images/grain.jpg')] opacity-5" />
