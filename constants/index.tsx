@@ -109,4 +109,19 @@ const PROJECTS = [
   },
 ];
 
-export { NAV_ITEMS, STARS_ICONS, PROJECTS };
+const PROJECTS_FEATURES: string[] = [
+  "Performant",
+  "Accessible",
+  "Secure",
+  "Interactive",
+  "Scalable",
+  "User Friendly",
+  "Responsive",
+  "Maintainable",
+  "Search Optimized",
+  "Customizable",
+  "Usable",
+  "Reliable",
+];
+
+export { NAV_ITEMS, STARS_ICONS, PROJECTS, PROJECTS_FEATURES };
