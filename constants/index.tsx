@@ -10,6 +10,7 @@ import memojiAvatar4 from "@/public/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/public/images/memoji-avatar-5.png";
 
 import { SparkleIcon, StarIcon } from "@/components/icons";
+import type { Project } from "@/components/project-card";
 import type { Testimonial } from "@/components/testimonial-card";
 
 const NAV_ITEMS: { id: number; title: string; url: string }[] = [
@@ -76,7 +77,7 @@ const STARS_ICONS: {
   },
 ];
 
-const PROJECTS = [
+const PROJECTS: Project[] = [
   {
     company: "Acme Corp",
     year: "2022",
