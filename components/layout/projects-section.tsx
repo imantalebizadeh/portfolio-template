@@ -3,20 +3,17 @@ import { buttonVariants } from "../ui/button";
 import Image from "next/image";
 import { ArrowUpRightIcon, CheckCircleIcon } from "../icons";
 import { cn } from "@/lib/utils";
+import SectionHeader from "../section-header";
 
 export default function ProjectsSection() {
   return (
     <section className="scroll-m-20 pb-16 xl:my-24" id="projects">
       <div className="container">
-        <p className="mx-auto w-fit bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text font-semibold tracking-widest text-transparent">
-          REAL WORD RESULTS
-        </p>
-        <h2 className="mt-6 text-center font-serif text-3xl md:text-5xl">
-          Featured Projects
-        </h2>
-        <p className="mt-4 text-center text-white/60 md:text-lg xl:text-xl">
-          See how I transformed my ideas into reality.
-        </p>
+        <SectionHeader
+          eyebrow="real word results"
+          title="featured projects"
+          description="see how i transformed my ideas into reality"
+        />
 
         {/* Projects */}
         <div className="mt-10 flex flex-col gap-20 md:mt-20">
