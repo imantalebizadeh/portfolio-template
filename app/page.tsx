@@ -1,7 +1,8 @@
-import ProjectsFeaturesTap from "@/components/layout/projects-features-tap";
 import Header from "@/components/layout/header";
 import HeroSection from "@/components/layout/hero-section";
+import ProjectsFeaturesTap from "@/components/layout/projects-features-tap";
 import ProjectsSection from "@/components/layout/projects-section";
+import TestimonialsSection from "@/components/layout/Testimonials";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <HeroSection />
       <ProjectsSection />
       <ProjectsFeaturesTap />
+      <TestimonialsSection />
     </div>
   );
 }
