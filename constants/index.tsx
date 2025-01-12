@@ -9,9 +9,19 @@ import memojiAvatar3 from "@/public/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/public/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/public/images/memoji-avatar-5.png";
 
-import { SparkleIcon, StarIcon } from "@/components/icons";
+import {
+  ChromeIcon,
+  CssIcon,
+  GithubIcon,
+  HtmlIcon,
+  JavascriptIcon,
+  ReactIcon,
+  SparkleIcon,
+  StarIcon,
+} from "@/components/icons";
 import type { Project } from "@/components/project-card";
 import type { Testimonial } from "@/components/testimonial-card";
+import type { ToolboxItem } from "@/components/toolbox-item";
 
 const NAV_ITEMS: { id: number; title: string; url: string }[] = [
   { id: 1, title: "Home", url: "#" },
@@ -164,4 +174,81 @@ const TESTIMONIALS: Testimonial[] = [
   },
 ];
 
-export { NAV_ITEMS, PROJECTS, PROJECTS_FEATURES, STARS_ICONS, TESTIMONIALS };
+const TOOLBOX_ITEMS: ToolboxItem[] = [
+  {
+    title: "HTML5",
+    icon: HtmlIcon,
+  },
+  {
+    title: "CSS3",
+    icon: CssIcon,
+  },
+  {
+    title: "Javascript",
+    icon: JavascriptIcon,
+  },
+  {
+    title: "React",
+    icon: ReactIcon,
+  },
+  {
+    title: "Github",
+    icon: GithubIcon,
+  },
+  {
+    title: "Chrome",
+    icon: ChromeIcon,
+  },
+];
+
+const HOBBIES: {
+  title: string;
+  emoji: string;
+  position: { left: `${number}%`; top: `${number}%` };
+}[] = [
+  {
+    title: "UI/UX Design",
+    emoji: "🎨",
+    position: { left: "5%", top: "5%" },
+  },
+  {
+    title: "Travel",
+    emoji: "🚗",
+    position: { left: "55%", top: "2%" },
+  },
+  {
+    title: "Cooking",
+    emoji: "🍳",
+    position: { left: "35%", top: "40%" },
+  },
+  {
+    title: "Music",
+    emoji: "🎵",
+    position: { left: "75%", top: "45%" },
+  },
+  {
+    title: "Reading",
+    emoji: "📚",
+    position: { left: "5%", top: "65%" },
+  },
+  {
+    title: "Gaming",
+    emoji: "🎮",
+    position: { left: "10%", top: "35%" },
+  },
+  {
+    title: "Photography",
+    emoji: "📸",
+    position: { left: "45%", top: "70%" },
+  },
+];
+
+export {
+  HOBBIES,
+  NAV_ITEMS,
+  PROJECTS,
+  PROJECTS_FEATURES,
+  STARS_ICONS,
+  TESTIMONIALS,
+  TOOLBOX_ITEMS,
+};
