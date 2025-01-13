@@ -243,6 +243,25 @@ const HOBBIES: {
   },
 ];
 
+const FOOTER_LINKS = [
+  {
+    name: "Github",
+    href: "#",
+  },
+  {
+    name: "Instagram",
+    href: "#",
+  },
+  {
+    name: "Twitter",
+    href: "#",
+  },
+  {
+    name: "LinkedIn",
+    href: "#",
+  },
+];
+
 export {
   HOBBIES,
   NAV_ITEMS,
@@ -251,4 +270,5 @@ export {
   STARS_ICONS,
   TESTIMONIALS,
   TOOLBOX_ITEMS,
+  FOOTER_LINKS,
 };
