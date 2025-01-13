@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 
 import { ArrowUpRightIcon, CheckCircleIcon } from "./icons";
 import { buttonVariants } from "./ui/button";
+import Card from "./ui/card";
 
 export type Project = {
   company: string;
@@ -14,9 +15,18 @@ export type Project = {
   image: StaticImageData;
 };
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({
+  project,
+  index,
+}: {
+  project: Project;
+  index: number;
+}) {
   return (
-    <div className="relative z-0 overflow-hidden rounded-3xl bg-gray-800 px-8 pt-8 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:border-2 after:border-white/20 after:content-[''] xl:px-20 xl:pt-16">
+    <Card
+      className="sticky px-8 pt-8 xl:px-20 xl:pt-16"
+      style={{ top: `calc(64px + ${index * 40}px)` }}
+    >
       <div className="xl:grid xl:grid-cols-2 xl:gap-x-16">
         <div className="xl:pb-16">
           <div className="inline-flex gap-x-2 bg-gradient-to-r from-emerald-300 to-sky-300 bg-clip-text font-bold uppercase tracking-widest text-transparent">
@@ -58,6 +68,6 @@ export default function ProjectCard({ project }: { project: Project }) {
           />
         </div>
       </div>
-    </div>
+    </Card>
   );
 }
