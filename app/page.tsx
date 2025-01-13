@@ -1,4 +1,5 @@
 import AboutSection from "@/components/layout/about-section";
+import CTASection from "@/components/layout/cta-section";
 import Header from "@/components/layout/header";
 import HeroSection from "@/components/layout/hero-section";
 import ProjectsFeaturesTap from "@/components/layout/projects-features-tap";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <ProjectsFeaturesTap />
       <TestimonialsSection />
       <AboutSection />
+      <CTASection />
     </div>
   );
 }
