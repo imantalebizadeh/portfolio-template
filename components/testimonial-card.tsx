@@ -1,4 +1,5 @@
 import Image, { type StaticImageData } from "next/image";
+import Card from "./ui/card";
 
 export type Testimonial = {
   name: string;
@@ -13,8 +14,7 @@ export default function TestimonialCard({
   testimonial: Testimonial;
 }) {
   return (
-    <div className="relative z-0 max-w-xs shrink-0 overflow-hidden rounded-3xl bg-gray-800 p-6 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:border-2 after:border-white/20 after:content-[''] md:max-w-md md:p-8">
-      <div className="absolute inset-0 -z-10 bg-[url('/images/grain.jpg')] opacity-5" />
+    <Card className="max-w-xs p-6 transition-transform duration-300 hover:scale-105 md:max-w-md md:p-8">
       <div className="flex items-center gap-x-4">
         <div className="grid size-14 place-items-center overflow-hidden rounded-full bg-gray-700 p-0.5">
           <Image src={testimonial.avatar} alt={testimonial.name} />
@@ -27,6 +27,6 @@ export default function TestimonialCard({
       <p className="mt-4 text-sm text-white/60 md:mt-6 md:text-base">
         {testimonial.text}
       </p>
-    </div>
+    </Card>
   );
 }

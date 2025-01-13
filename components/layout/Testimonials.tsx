@@ -1,7 +1,8 @@
 import { TESTIMONIALS } from "@/constants";
 
-import TestimonialCard from "../testimonial-card";
+import { Fragment } from "react";
 import SectionHeader from "../section-header";
+import TestimonialCard from "../testimonial-card";
 
 export default function TestimonialsSection() {
   return (
@@ -13,10 +14,19 @@ export default function TestimonialsSection() {
           description="don't take my word for it. hear what our happy clients have to say about my work"
         />
 
-        <div className="mask-image mt-16 flex gap-x-8 overflow-x-clip xl:mt-24">
-          {TESTIMONIALS.map((testimonial) => (
-            <TestimonialCard key={testimonial.name} testimonial={testimonial} />
-          ))}
+        <div className="mask-image mt-12 flex overflow-x-clip py-4 xl:mt-20">
+          <div className="flex shrink-0 animate-move-left gap-x-8 pr-8 [animation-duration:90s] hover:[animation-play-state:paused]">
+            {Array.from({ length: 2 }).map((_, index) => (
+              <Fragment key={index}>
+                {TESTIMONIALS.map((testimonial) => (
+                  <TestimonialCard
+                    key={testimonial.name}
+                    testimonial={testimonial}
+                  />
+                ))}
+              </Fragment>
+            ))}
+          </div>
         </div>
       </div>
     </section>
