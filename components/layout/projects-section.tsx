@@ -15,8 +15,8 @@ export default function ProjectsSection() {
 
         {/* Projects */}
         <div className="mt-10 flex flex-col gap-20 md:mt-20">
-          {PROJECTS.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+          {PROJECTS.map((project, index) => (
+            <ProjectCard key={project.title} project={project} index={index} />
           ))}
         </div>
       </div>
