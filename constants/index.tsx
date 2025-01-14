@@ -246,7 +246,7 @@ const HOBBIES: {
 const FOOTER_LINKS = [
   {
     name: "Github",
-    href: "#",
+    href: "https://github.com/imantalebizadeh/portfolio-template?tab=readme-ov-file",
   },
   {
     name: "Instagram",
