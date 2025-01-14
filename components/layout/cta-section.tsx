@@ -1,5 +1,6 @@
+import { cn } from "@/lib/utils";
 import { ArrowUpRightIcon } from "../icons";
-import { Button } from "../ui/button";
+import { buttonVariants } from "../ui/button";
 
 export default function CTASection() {
   return (
@@ -14,12 +15,18 @@ export default function CTASection() {
               </h2>
               <p className="mt-2 text-sm md:text-base">
                 Ready to bring your next project to life? Let&apos;s connect and
-                discuss how I con help you to achieve your goals.
+                discuss how I can help you to achieve your goals.
               </p>
             </div>
-            <Button className="bg-gray-900 font-semibold text-white">
+            <a
+              href="#"
+              className={cn(
+                buttonVariants(),
+                "bg-gray-900 font-semibold text-white",
+              )}
+            >
               Contact Me <ArrowUpRightIcon />
-            </Button>
+            </a>
           </div>
         </div>
       </div>
