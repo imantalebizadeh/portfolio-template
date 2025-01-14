@@ -30,7 +30,7 @@ A modern portfolio template built with Next.js 15, TypeScript, Tailwind CSS, and
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/username/project-name.git
+git clone https://github.com/imantalebizadeh/portfolio-template.git
 cd project-name
 ```
 
